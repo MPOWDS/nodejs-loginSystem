@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Node Authentication</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
 	<style>
@@ -10,31 +11,38 @@
 	</style>
 </head>
 <body>
+
 <div class="container">
 
 	<div class="page-header text-center">
-		<h1><span class="fa fa-anchor"></span> Profile Page</h1>
+		<h1><span class="fa fa-anchor"></span> Velkommen til Dashboard</h1>
 		<a href="/logout" class="btn btn-default btn-sm">Logout</a>
 	</div>
 
 	<div class="row">
-
-		<!-- LOCAL INFORMATION -->
-		<div class="col-sm-6">
+		<div class="col-sm-12">
 			<div class="well">
-				<h3><span class="fa fa-user"></span> Local</h3>
+				<h3><span class="fa fa-user"></span> Opret, Rediger & Slet Produkter</h3>
+			</div>
+			<!-- her sættes tingene til at oprette og redigere samt slette produkter -->
 
+		</div>
+		
+		<!-- LOCAL INFORMATION -->
+		<div class="col-sm-4">
+			<div class="well">
+				<h3><span class="fa fa-user"></span> Local Bruger Profil</h3>
+			</div>
 					<p>
 						<strong>id</strong>: <%= user.id %><br>
 						<strong>username</strong>: <%= user.username %><br>
 						<strong>password</strong>: <%= user.password %>
 					</p>
-
-			</div>
 		</div>
-
 	</div>
-
 </div>
 </body>
+<footer id="sticky">
+	<p>&copy; Zyberdata - Computer and Development Service 2018 | Admin: Randi Mortensen | <a href="/">Forside</a> |</p>
+</footer>
 </html>

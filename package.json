@@ -16,6 +16,7 @@
     },
     "homepage": "https://github.com/MPOWDS/nodejs-loginSystem#readme",
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.2.0",
         "bcrypt-nodejs": "^0.0.3",
         "body-parser": "~1.15.0",
         "connect-flash": "^0.1.1",
@@ -25,6 +26,7 @@
         "express": "~4.13.1",
         "express-session": "^1.13.0",
         "morgan": "~1.7.0",
+        "mysql2": "^1.6.1",
         "node-mysql": "*",
         "nodemon": "^1.18.3",
         "passport": "^0.3.2",

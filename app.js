@@ -30,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // required for passport
 require('./config/passport')(passport); // pass passport for configuration
+
 app.use(session({
 	secret: 'vidyapathaisalwaysrunning',
 	resave: true,

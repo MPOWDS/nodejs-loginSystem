@@ -1,8 +1,62 @@
+/* **** boddy **** */
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+/* **** Angertag **** */
 a {
   color: #00B7FF;
+}
+/* **** Navbar **** */
+.navbar .dropdown-toggle, .navbar .dropdown-menu a {
+  cursor: pointer;
+}
+
+.navbar .dropdown-item.active, .navbar .dropdown-item:active {
+  color: inherit;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+
+/* **** col 4  - p  **** */
+.col-4 p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* **** Footer **** */
+#sticky {
+  width:100%;
+  padding:20px;
+  padding-bottom:16px;
+  background:black;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  position:fixed;    /*Here's what sticks it*/
+  bottom:0;          /*to the bottom of the body*/
+  left:0;            /*and to the left of the body.*/
+  
+  /*EFFECTS*/
+  border-top:1px solid whitesmoke;
+  background-image:url(http://rs257.pbsrc.com/albums/hh234/tfm448/Snow411.gif~c200)
+}
+
+@media (min-width: 767px) {
+  .navbar .dropdown-toggle:not(.nav-link)::after {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: .5em;
+      vertical-align: 0;
+      border-bottom: .3em solid transparent;
+      border-top: .3em solid transparent;
+      border-left: .3em solid;
+  }
 }

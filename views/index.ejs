@@ -1,24 +1,99 @@
-<!-- views/index.ejs -->
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Node Authentication</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
-	<style>
-		body 		{ padding-top:80px; }
-	</style>
-</head>
-<body>
+  <head>
+    <!-- <title>Express-Template-login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Express-Template-login</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Scripts -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      .resimg{width:100%;display:inline-block}
+    </style>
+ </head>
+ <body>
+    <div class="navbar navbar-expand-md navbar-dark bg-dark mb-4" role="navigation">
+        <a class="fab fa-node" href="#">  RBM Produkter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/nyhed">Nyhedsarkiv</a>
+                    </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/nyhed">Produkter</a>
+                    </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/login"class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+                </li>
+            </ul>
+            </div>
+        </div>
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1><span class="fa fa-lock"></span> Node Authentication</h1>
-
-            <p>Login or Register with:</p>
-
-            <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
-            <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+        <div class="row">
+            <div class="col-4">
+                <h2>Produkt</h2>
+        
+                <br>
+                <h2>Nyhedsbrev</h2>
+                <p>Tilmeld dig nyhedsbrev her</p>
+            
+            
+                <h2>Kontaktoplysninger</h2>
+                <div class="well">
+                    <h3>RBM Produkter</h3>
+                    <p>Pilealle 1</p>
+                    <p>4760 Vordingborg</p>
+                    <p><Tlf class=":">53 66 02 22</Tlf></p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h2>En hjemmeside er ikke bare en hjemmeside</h2>
+                <p>Hjemmesider findes på Internettet. Skrives/laves typisk af et mediebureau og redigeres løbende af en webmaster. Webmasteren kan være professionel, altså en der får penge for at lave den, eller det kan være almindelige private folk. Mediebureauer laver typisk den indledende opsætning. Den bestilles eller laves af  folk, som vil aflevere et budskab eller en information. En hjemmeside kan også være reklame for et produkt eller en ydelse, fra en virksomhed. Den kan handle om ét bestemt eller flere emner, som kan være alle emner.  Teksten kan være kort eller lang.  Kan indeholde brudstykker af andre genrer f.eks. tegninger, fotos, digte, artikler.. osv. Den indeholder ofte en masse computerskabte effekter, såsom animerede billeder, gæstebøger, fora, butik, links og meget andet. </p>
+                <br>
+                <h2>Analysemodel for gennemgang af hjemmesider</h2>
+                <p>1. Hvad hedder hjemmesiden? <br> 2. Hvad er hjemmesideadressen? <br>3. Hvilken nationalitet har den?
+                <br>4. Hvem er webmaster? <br>5. Er webmasterens mailadresse nævnt? <br> 6. Hvad er den?
+                <br>7. Er mediebureauet nævnt? <br>8. Hvem er det? <br>9. Hvad handler hjemmesiden om?
+                <br>10. Hvornår er hjemmesiden lavet? <br>11. Hvornår er den sidst redigeret? </p>
+                <br>
+                <h2>Emne / problemer</h2>
+                <p>Hvilke problemer/emner nævnes i teksten?<br>
+                Er der en løsning/forklaring på dem? <br>Tror du på løsningen/forklaringen? <br>Vil den sælge et produkt?
+                <br>Hvad kan du bruge siden til? <br>Hvad kan andre bruge siden til?
+                <br>Er hjemmesiden subjektiv eller objektiv?
+                <br>Kommunikationssammenhæng: 
+                <br>Hvem er afsender?
+                <br>Hvad er budskab?
+                <br>Hvem er modtager? Målgruppe? Er modtager og målgruppe den samme?
+                <br>Hvad synes du om hjemmesiden? Begrund!
+                <br>Sammenlign hjemmesiden med andre “tekster” du har læst, set, lavet…..!
+                <br>Rigtig god fornøjelse! </p>
+            </div>
         </div>
     </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="javascripts/navbar.js"></script>
+</main>
 </body>
+<footer id="sticky">
+        <p>&copy; Zyberdata - Computer and Development Service 2018 | Admin: Randi Mortensen | <a href="/">Forside</a> |</p>
+    </footer>
 </html>
