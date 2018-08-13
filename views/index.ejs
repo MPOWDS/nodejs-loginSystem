@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <title>Express-Template-login</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' /> -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Express-Template-login</title>
     <!-- stylesheets -->
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" id="bootstrap-css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- Scripts -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -46,8 +43,14 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <h2>Produkt</h2>
-        
+                <% if((typeof item) !='undefined') { %>
+                    <h2>Produkt</h2>
+                    <% item.forEach(function(item) { %>
+                        <h2><% item.name %></h2>
+                        <img class="resimg" src="imags/<%= item.billeder %>" <br>
+                   <% }); %>
+                <% } %>
+                
                 <br>
                 <h2>Nyhedsbrev</h2>
                 <p>Tilmeld dig nyhedsbrev her</p>
